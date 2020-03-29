@@ -1,0 +1,6 @@
+{
+    "logger": {
+        "infoURL": "info.log",
+        "errorURL": "error.log"
+    }
+}

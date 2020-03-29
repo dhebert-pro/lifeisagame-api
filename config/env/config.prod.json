@@ -1,0 +1,6 @@
+{
+    "logger": {
+        "infoURL": "/var/log/nginx/info.log",
+        "errorURL": "/var/log/nginx/error.log"
+    }
+}

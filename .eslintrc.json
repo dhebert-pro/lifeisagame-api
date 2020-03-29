@@ -1,0 +1,39 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "amd": true,
+        "node": true,
+        "mocha": true
+    },
+    "extends": ["eslint:recommended", "prettier"],
+    "globals": {
+        "rootRequire": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 9,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "prettier"
+    ],
+    "rules": {
+        "object-curly-spacing": ["error", "always"],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "no-console": "warn",
+        "prettier/prettier": ["error", {
+            "endOfLine":"auto"
+        }],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
+    }
+}
