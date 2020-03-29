@@ -1,0 +1,19 @@
+{
+  "name": "lifeisagame-api",
+  "version": "1.0.0",
+  "description": "Life is a game API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhebert-pro/lifeisgame-api.git"
+  },
+  "author": "David Hébert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhebert-pro/lifeisgame-api/issues"
+  },
+  "homepage": "https://github.com/dhebert-pro/lifeisgame-api#readme"
+}
