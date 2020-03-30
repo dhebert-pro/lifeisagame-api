@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 const methodOverride = require("method-override");
 const app = require("express")();
 const logger = rootRequire("config/logger");
+const router = rootRequire("api/routes");
 
 if (typeof TextEncoder !== "function") {
   const TextEncodingPolyfill = require("text-encoding");
@@ -23,7 +24,8 @@ app.use(
 );
 app.use(bodyParser.json());
 app.use(methodOverride());
-app.use((err, req, res) => {
+app.use(router);
+app.use((err, req, res, next) => {
   logger.error(err);
   if (
     err.response !== undefined &&
@@ -35,6 +37,7 @@ app.use((err, req, res) => {
   } else {
     res.status(500).send({ error: "Internal server error" });
   }
+  next();
 });
 
 app.listen(port);
